@@ -12,7 +12,9 @@ export default function App() {
 
    return (
       <NavigationContainer>
-         <Nav.Navigator screenOptions={{headerShown:false}}>
+         <Nav.Navigator 
+         screenOptions={{headerShown:false}} 
+         initialRouteName='Win'>
             <Nav.Screen name='Home' component={ Home }/>
             <Nav.Screen name='Win' component={ Win }/>
             <Nav.Screen name='Lose' component={ Lose }/>
@@ -20,4 +22,4 @@ export default function App() {
          </Nav.Navigator>
       </NavigationContainer>
    );
-}
+};
